@@ -24,16 +24,15 @@ Tested solely on x64 Windows 10.
 8. Run Default Programs Editor. You want to select: File Type Settings -> Context Menu, and then select .jpg (and possibly also .png, if you do this a second time)
 9. Click "Add..."
 10. Enter a command name, e.g. "Batch Resize".
-11. Enter the following line in Program path
-```
-"C:\IrfanviewConfig\singleinstance.exe" "%1" "C:\Path\To\ResizePromptGui.exe" $files
-```
+11. Enter the following line in Program path `"C:\path\to\singleinstance.exe" "%1" "C:\Path\To\ResizePromptGui.exe" $files`
 12. Click "Next"
 13. Click "Save Context Menu"
 14. All set! Repeat for .jpeg and .png files if desired (or any format), or just exit out of Default Programs Editor.
 15. To see it in action, right click on a .jpg file and select "Batch Resize".
 
-![Example of GUI](https://github.com/erelson/BatchResample/raw/master/src/common/images/gui.png)
+![Example of GUI](images/gui.jpg)
+
+![Default Programs Editor](images/defaultprogramseditor.jpg)
 
 ##Issues##
 Seems to have issues with mixing capitalization (.jpg and .JPG images in same selection).
