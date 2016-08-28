@@ -19,11 +19,12 @@ Gui, Submit
 Loop, %0%  ; For each parameter:
 {
     num := Count + A_Index - 1
+    param := %A_Index%
     if num < 10
       Prefix := "0"
     else
       Prefix := ""
-    run `"C:\Program Files (x86)\IrfanView\i_view32.exe`" %param% /resize_long=%Pixels% /aspectratio /convert=%Name%%num%.%Prefix%%Ext%
+    run `"C:\Program Files (x86)\IrfanView\i_view32.exe`" %param% /resize_long=%Pixels% /aspectratio /convert=%Name%%Prefix%%num%.%Ext%
 }
 ExitApp
 return
